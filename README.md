@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Check out the live version of this app 
+# Getting Started with Create React App [here](https://rest-countries-2f5jxoon2-shegz101.vercel.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
