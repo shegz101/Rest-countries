@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+html {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Search-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.search {
+    margin-top: 30px;
+    margin-left: 3.5rem;
+    height: 3rem;
+    width: 26rem;
+    position: relative;
+    background-color: var(--primary-bgcolor);
+    color: var(--very-dark-blue);
+    border: 1px solid transparent;
+    border-bottom:1px solid var(--primary-bgcolor);
+    border-top:1px solid var(--primary-bgcolor); 
+    border-left:1px solid var(--primary-bgcolor);
+    border-right: 1px solid var(--primary-bgcolor);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.search-input {
+    font-size: 12px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    padding-left: 2.5rem;
+    width: 26rem;
+    text-decoration: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--primary-bgcolor);
+    border: 1px solid transparent;
+}
+
+::placeholder {
+    /* padding-left: -4px;
+    padding-top: -20px; */
+    font-size: 18px;
+}
+
+.search-icon {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: var(--text-color);
+}
+
+/*dropdown menu session*/
+.dropdown {
+    /* width: 400px; */
+    position: relative;
+    user-select: none;
+    z-index: 20;
+}
+
+.dropdown .dropdown-btn {
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: -10px;
+    margin-right: 6rem;
+    cursor:pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10rem;
+    color: var(--text-color);
+    margin-top: 30px;
+    text-decoration: none;
+    outline: none;
+    background-color: var(--primary-bgcolor);
+    border: 1px solid transparent;
+    border-bottom:1px solid var(--primary-bgcolor);
+    border-top:1px solid var(--primary-bgcolor); 
+    border-left:1px solid var(--primary-bgcolor);
+    border-right: 1px solid var(--primary-bgcolor);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown .dropdown-content {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    width: 9.8rem;
+    top: 110%;
+    left: 0;
+    padding: 15px;
+    cursor:pointer;
+    color: var(--text-color);
+    background-color: var(--primary-bgcolor);
+    border: 1px solid transparent;
+    border-bottom:1px solid var(--primary-bgcolor);
+    border-top:1px solid var(--primary-bgcolor); 
+    border-left:1px solid var(--primary-bgcolor);
+    border-right: 1px solid var(--primary-bgcolor);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.dropIcon {
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: -2px;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+    font-size: 13px;
+    padding: 4px;
+    cursor:pointer;
+    text-align: start;
+    transition: all 0.2s;
+}
+
+/*CountryCard Component Styling*/
+.container {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: -1.1rem;
+    /* background-color: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.country-card {
+    width: 260px;
+    height: 320px;
+    margin: 2.2rem;
+    /* background-color: var(--Very-Light-Gray); */
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.country-card img {
+    width: 100%;
+    height: 160px;
+}
+
+.country-card a {
+    text-decoration: none;
+}
+
+.country-info {
+    padding-top: 5px;
+    padding-left: 20px;
+    height: 140px;
+    text-align: start;
+    color: var(--text-color);
+    background-color: var(--primary-bgcolor);
+}
+
+.country-info h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.country-card p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.country-info p span {
+    font-weight: 600;
+}
+  
+.country-card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+} 
+  
+/*CountryInfo Component Styling*/
+.country-prev-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 4rem;
+    padding: 2px;
+    height: 2.5rem;
+    width: 8rem;
+    /* position: relative; */
+    background-color: var(--primary-bgcolor);
+    border: 1px solid transparent;
+    border-bottom:1px solid var(--primary-bgcolor);
+    border-top:1px solid var(--primary-bgcolor); 
+    border-left:1px solid var(--primary-bgcolor);
+    border-right: 1px solid var(--primary-bgcolor);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+}
+
+.country-prev-btn .prev-icon {
+    font-weight: 600;
+    color: var(--text-color);
+    padding-left: 2rem;
+    padding-top: 0.8rem;
+}
+
+.country-prev-btn .prev-note {
+    padding-left: 1rem;
+    color:var(--text-color);
+    margin-top: -5px;
+    font-weight: 600;
+    padding-bottom:5rem;
+}
+
+.country-details {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin-left: 55px;
+    margin-top: 50px;
+}
+
+.text-description {
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color);
+}
+
+.text-description span {
+    font-weight: 600;
+}
+
+.text-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13rem;
+}
+
+.text-first {
+    margin-left: 70px;
+    text-align: start;
+}
+
+.border-container {
+    display:flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-top: 8px;
+}
+
+.border-container span {
+    font-weight: 600;
+    padding-top: 10px;
+    color: var(--text-color);
+}
+
+.border-button {
+    margin-left: 5px;
+}
+
+.border-btn {
+    background-color: var(--primary-bgcolor);
+    border: 1px solid transparent;
+    border-bottom:1px solid var(--primary-bgcolor);
+    border-top:1px solid var(--primary-bgcolor); 
+    border-left:1px solid var(--primary-bgcolor);
+    border-right: 1px solid var(--primary-bgcolor);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+    height: 1.5rem;
+    margin-top: 5px;
+    color: var(--text-color);
+}
+
+.country-name {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.detail-image {
+    height: 100%;
+    width: 140%;
+}
+
+.text-second {
+    margin-top: 2.5rem;
+    margin-left: 12rem;
+    text-align: start;
+}
+
+/************MEDIA QUERIES*************************************/
+@media only screen and (min-width:0px) and (max-width:320px) {
+    html {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .Search-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 19rem;
+    }
+
+    .search-input {
+        width: 19rem;
+    } 
+    
+    .dropdown {
+        margin-left: 2rem;
+    }
+
+    .dropIcon {
+        font-size: 17px;
+        padding-top: 2px;
+    }
+
+    .country-prev-btn {
+        margin-left: 1rem;
+        margin-top: 40px;
+        width: 6rem;
+    }
+
+    .country-prev-btn .prev-icon {
+        font-weight: 400;
+        padding-left: 1rem;
+    }
+
+    .country-prev-btn .prev-note {
+        font-weight: 400;
+    }
+
+    .country-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: -5px;
+    }
+
+    .detail-image {
+        height: 80%;
+        width: 90%;
+    }
+
+    .text-details {
+        margin-left: -50px;
+        overflow-y: scroll;
+    }
+
+    .text-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-second {
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width:376px) {
+    .container {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .Search-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        margin-left: 2rem;
+        width: 22rem;
+    }
+
+    .search-input {
+        width: 22rem;
+    }
+
+    .dropdown {
+        margin-left: 2rem;
+    }
+
+    .dropIcon {
+        font-size: 17px;
+        padding-top: 2px;
+    }
+
+    .country-card {
+        width: 320px;
+    }
+
+    .country-prev-btn {
+        margin-left: 1rem;
+        margin-top: 40px;
+        width: 6rem;
+    }
+
+    .country-prev-btn .prev-icon {
+        font-weight: 400;
+        padding-left: 1rem;
+    }
+
+    .country-prev-btn .prev-note {
+        font-weight: 400;
+    }
+
+    .country-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: -5px;
+    }
+
+    .detail-image {
+        height: 80%;
+        width: 90%;
+    }
+
+    .text-details {
+        margin-left: -50px;
+        overflow-y: scroll;
+    }
+
+    .text-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-second {
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (min-width:377px) and (max-width:426px) {
+    .container {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .Search-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 25rem;
+    }
+
+    .search-input {
+        width: 25rem;
+    }
+
+    .dropdown {
+        margin-left: 2rem;
+    }
+
+    .dropIcon {
+        font-size: 17px;
+        padding-top: 2px;
+    }
+
+    .country-card {
+        width: 350px;
+    }
+
+    .country-prev-btn {
+        margin-left: 1rem;
+        margin-top: 40px;
+        width: 6rem;
+    }
+
+    .country-prev-btn .prev-icon {
+        font-weight: 400;
+        padding-left: 1rem;
+    }
+
+    .country-prev-btn .prev-note {
+        font-weight: 400;
+    }
+
+    .country-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: -5px;
+    }
+
+    .detail-image {
+        height: 80%;
+        width: 90%;
+    }
+
+    .text-details {
+        margin-left: -50px;
+        overflow-y: scroll;
+    }
+
+    .text-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-second {
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+}
+
